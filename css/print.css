@@ -1,0 +1,12 @@
+/* print.css – clean print layout for expense reports */
+@media print {
+  .site-header { background: none; box-shadow: none; border-bottom: 2px solid #000; padding: 8px 0; }
+  #theme-toggle, .toolbar, #add-expense-btn, #add-funds-btn,
+  #export-csv-btn, .delete-btn, .wallet-add, .form-panel { display: none !important; }
+  body { background: #fff; color: #000; font-family: Arial, sans-serif; }
+  .panel { box-shadow: none; border: 1px solid #ddd; page-break-inside: avoid; }
+  .expense-item { border-bottom: 1px solid #eee; }
+  .amount { color: #000 !important; }
+  .site-footer { border-top: 1px solid #ddd; font-size: 0.75rem; }
+  a { text-decoration: none; color: inherit; }
+}

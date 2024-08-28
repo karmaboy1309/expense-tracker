@@ -291,3 +291,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initKeyboardShortcuts();
   refreshUI();
 });
+
+/* ts:search-filter-v1 */

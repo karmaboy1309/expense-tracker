@@ -152,3 +152,5 @@ window.storage = {
   setMonthlyBudget,
   exportToCSV
 };
+
+/* ts:currency-v1 */

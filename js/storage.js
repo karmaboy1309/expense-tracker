@@ -154,3 +154,5 @@ window.storage = {
 };
 
 /* ts:currency-v1 */
+
+/* ts:budget-storage-v1 */

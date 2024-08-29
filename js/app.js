@@ -293,3 +293,5 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /* ts:search-filter-v1 */
+
+/* ts:sort-dropdown-v1 */

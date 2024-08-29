@@ -220,3 +220,5 @@ window.ui = {
   renderBudgetBar,
   formatDateDisplay
 };
+
+/* ts:category-icons-v1 */

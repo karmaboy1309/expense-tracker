@@ -295,3 +295,5 @@ document.addEventListener('DOMContentLoaded', () => {
 /* ts:search-filter-v1 */
 
 /* ts:sort-dropdown-v1 */
+
+/* ts:keyboard-shortcuts-v1 */

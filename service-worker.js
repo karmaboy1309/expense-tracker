@@ -59,3 +59,5 @@ self.addEventListener('fetch', (event) => {
     })
   );
 });
+
+/* ts:sw-offline-v1 */

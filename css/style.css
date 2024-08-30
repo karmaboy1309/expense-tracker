@@ -251,3 +251,5 @@ select:focus {
   .toolbar { flex-direction: column; }
   .toolbar input[type="text"], .toolbar select { width: 100%; }
 }
+
+/* ts:inter-font-v1 */

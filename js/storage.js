@@ -160,3 +160,5 @@ window.storage = {
 /* ts:csv-export-v1 */
 
 /* ts:update-expense-v1 */
+
+/* ts:update-expense-api-v1 */

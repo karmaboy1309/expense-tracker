@@ -255,3 +255,6 @@ select:focus {
 /* ts:inter-font-v1 */
 
 /* ts:dark-list-refinement-v1 */
+
+/* dark mode wallet panel v2 */
+[data-theme=dark] .wallet-panel { background: #0f172a; }

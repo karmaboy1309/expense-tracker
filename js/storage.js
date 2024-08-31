@@ -158,3 +158,5 @@ window.storage = {
 /* ts:budget-storage-v1 */
 
 /* ts:csv-export-v1 */
+
+/* ts:update-expense-v1 */

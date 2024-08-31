@@ -226,3 +226,5 @@ window.ui = {
 /* ts:toast-notifications-v1 */
 
 /* ts:wallet-balance-color-v1 */
+
+/* ts:footer-count-v1 */

@@ -61,3 +61,5 @@ self.addEventListener('fetch', (event) => {
 });
 
 /* ts:sw-offline-v1 */
+
+/* ts:sw-cache-v2 */

@@ -258,3 +258,9 @@ select:focus {
 
 /* dark mode wallet panel v2 */
 [data-theme=dark] .wallet-panel { background: #0f172a; }
+
+/* mobile small screen polish */
+@media (max-width:380px) {
+  .summary-value { font-size: 0.95rem; }
+  .category-badge { font-size: 0.75rem; }
+}

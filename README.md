@@ -63,3 +63,18 @@ Expenses are saved in `localStorage` under the key `'expenses'` as an array of o
 ```
 
 Wallet balance is persisted separately under the key `'wallet_balance'`.
+
+## New Features (v2.0)
+
+- Dark Mode - Toggle light/dark, persisted to localStorage
+- Multi-Currency - Switch between INR, USD, EUR, GBP
+- Search and Filter - Instant search by note/category/amount
+- CSV Export - Download expenses as CSV with one click
+- Monthly Budget - Set limit with colour-coded progress bar
+- Sort Options - Sort by newest, oldest, highest, lowest
+- PWA / Offline - Installable; works offline via service worker
+- Toast Notifications - Non-blocking feedback for every action
+- Print Stylesheet - Clean expense report printing
+- Keyboard Shortcuts - Ctrl+/ to focus amount, Esc clears search
+- Weekly Summary - New 'This Week' stat alongside today/month/overall
+- Health and Entertainment - Two new expense categories with emoji icons

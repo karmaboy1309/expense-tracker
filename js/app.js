@@ -299,3 +299,5 @@ document.addEventListener('DOMContentLoaded', () => {
 /* ts:keyboard-shortcuts-v1 */
 
 /* ts:delete-toast-v1 */
+
+/* ts:wallet-toast-v1 */

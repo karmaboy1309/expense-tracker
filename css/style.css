@@ -264,3 +264,9 @@ select:focus {
   .summary-value { font-size: 0.95rem; }
   .category-badge { font-size: 0.75rem; }
 }
+
+/* micro-animations */
+.expense-item { transition: background 0.2s, transform 0.15s; }
+.expense-item:hover { transform: translateX(2px); }
+.btn { transition: background 0.2s, box-shadow 0.15s; }
+.btn:hover { box-shadow: 0 4px 8px rgba(37,99,235,0.25); }

@@ -228,3 +228,5 @@ window.ui = {
 /* ts:wallet-balance-color-v1 */
 
 /* ts:footer-count-v1 */
+
+/* ts:budget-bar-colors-v1 */

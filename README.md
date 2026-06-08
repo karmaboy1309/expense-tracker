@@ -26,6 +26,28 @@ Since the app runs entirely in your browser, all your data stays private and is 
 
 ---
 
+## 📸 Application Walkthrough
+
+Here is a quick glimpse of how the Wallet Expense Tracker works:
+
+### 1. Adding an Expense
+You can easily log expenses by entering an amount, selecting a category, adding an optional note (e.g., *Lunch with friends in CAFE*), and choosing the date.
+![Adding an Expense](screenshots/1.png)
+
+### 2. Live Dashboard & History Update
+As soon as you add expenses (such as the Cafe lunch and a Bus ticket), they appear in the transaction history. The **Wallet Summary** automatically calculates and displays your spending for Today, This Month, and Overall.
+![Dashboard and History](screenshots/2.png)
+
+### 3. Adding Funds to Wallet
+When you receive money (e.g., from parents, salary, or a friend), you can add funds directly to your wallet using the amount input field.
+![Adding Funds](screenshots/3.png)
+
+### 4. Updated Wallet Balance
+The wallet balance instantly reflects the added funds. Any subsequent expenses will be deducted from this balance, and deleting an expense will automatically refund it.
+![Updated Balance](screenshots/4.png)
+
+---
+
 ## 💾 Data Model
 
 Expenses are saved in `localStorage` under the key `'expenses'` as an array of objects structured as follows:

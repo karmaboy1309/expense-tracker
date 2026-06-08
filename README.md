@@ -42,8 +42,8 @@ As soon as you add expenses (such as the Cafe lunch and a Bus ticket), they appe
 When you receive money (e.g., from parents, salary, or a friend), you can add funds directly to your wallet using the amount input field.
 ![Adding Funds](screenshots/3.png)
 
-### 4. Updated Wallet Balance
-The wallet balance instantly reflects the added funds. Any subsequent expenses will be deducted from this balance, and deleting an expense will automatically refund it.
+### 4. Updated Wallet Balance & Transaction Record
+The wallet balance instantly reflects the added funds. In addition, an **Income** record is automatically created and logged in your transaction history (e.g., `+$1,000.00`) so you always have a complete record of both income and expenses. Any subsequent expenses will be deducted from this balance, and deleting a credit or expense will adjust your balance accordingly.
 ![Updated Balance](screenshots/4.png)
 
 ---

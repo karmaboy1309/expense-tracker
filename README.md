@@ -17,34 +17,12 @@ All your transaction details stay completely on your device, persisted using you
 
 ---
 
-## 📂 Project Structure
+## 🌐 Live Demo
 
-- [`index.html`](index.html) - The layout structure, form inputs, dashboard cards, and wallet control panel.
-- [`css/style.css`](css/style.css) - Responsive style definitions, theme variables, and visual design layout.
-- [`js/app.js`](js/app.js) - App initialization, form submissions, and DOM event listeners.
-- [`js/storage.js`](js/storage.js) - LocalStorage wrapper handling persistence for expense lists and wallet balances.
-- [`js/ui.js`](js/ui.js) - Rendering utilities for updating totals, wallet balances, and building the dynamic transaction lists.
+The application is deployed and ready to use at:
+👉 **[expense-trackerdarshan.vercel.app](https://expense-trackerdarshan.vercel.app/)**
 
----
-
-## 🛠️ Getting Started
-
-Since the project uses vanilla web technologies and has zero dependencies, you can run it instantly:
-
-### Method 1: Open Directly
-Double-click `index.html` (or right-click and select **Open with Browser**) to run the app directly from your local filesystem.
-
-### Method 2: Serve Locally (Recommended)
-If you prefer running it on a local development server, run one of the following commands in the project directory:
-
-```bash
-# Using Python
-python -m http.server 8000
-
-# Using Node (if installed)
-npx serve .
-```
-Then navigate to `http://localhost:8000` (or the port specified) in your browser.
+Since the app runs entirely in your browser, all your data stays private and is stored locally in your browser's local storage.
 
 ---
 

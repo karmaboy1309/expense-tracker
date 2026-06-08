@@ -59,6 +59,10 @@ input[type="number"],input[type="date"],input[type="text"],select{padding:10px;b
 
 .empty-note{text-align:center;color:var(--muted);padding:12px}
 
+.expense-item.credit{border-bottom:1px dashed #d1fae5}
+.expense-item.credit .category-badge{background:#e6f4ea;color:#137333}
+.expense-item.credit .amount{color:#137333}
+
 /* Responsive */
 @media (max-width:520px){
 	.summary-grid{flex-direction:column}

@@ -7,6 +7,9 @@
 /** format number as currency string (USD style) */
 function formatCurrency(amount) {
 	const n = Number(amount) || 0;
+	if (n < 0) {
+		return `-$${Math.abs(n).toFixed(2)}`;
+	}
 	return `$${n.toFixed(2)}`;
 }
 
@@ -34,6 +37,9 @@ function renderExpenses(expenses, onDelete) {
 	sorted.forEach(exp => {
 		const li = document.createElement('li');
 		li.className = 'expense-item';
+		if (exp.type === 'credit') {
+			li.classList.add('credit');
+		}
 
 		const left = document.createElement('div');
 		left.className = 'expense-left';
@@ -65,7 +71,11 @@ function renderExpenses(expenses, onDelete) {
 
 		const amount = document.createElement('div');
 		amount.className = 'amount';
-		amount.textContent = formatCurrency(exp.amount);
+		if (exp.type === 'credit') {
+			amount.textContent = `+${formatCurrency(exp.amount)}`;
+		} else {
+			amount.textContent = formatCurrency(exp.amount);
+		}
 
 		const del = document.createElement('button');
 		del.className = 'delete-btn';

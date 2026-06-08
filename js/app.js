@@ -20,6 +20,7 @@ function refreshUI() {
 
 	let totals = { today: 0, month: 0, overall: 0 };
 	expenses.forEach(exp => {
+		if (exp.type === 'credit') return;
 		const amount = Number(exp.amount) || 0;
 		totals.overall += amount;
 		if ((exp.date || '').slice(0,10) === todayStr) totals.today += amount;
@@ -32,14 +33,20 @@ function refreshUI() {
 		window.ui.updateWalletBalance(walletBalance || 0);
 	}
 	window.ui.renderExpenses(expenses, (id) => {
-		if (!confirm('Delete this expense?')) return;
-		// refund the deleted expense back to wallet
 		const existing = window.storage.getExpenses();
 		const found = existing.find(e => String(e.id) === String(id));
-		if (found) {
-			const amt = Number(found.amount) || 0;
-			// add back to wallet
-			window.storage.setWalletBalance((window.storage.getWalletBalance() || 0) + amt);
+		if (!found) return;
+
+		const isCredit = found.type === 'credit';
+		const confirmMsg = isCredit ? 'Delete this income record?' : 'Delete this expense?';
+		if (!confirm(confirmMsg)) return;
+
+		const amt = Number(found.amount) || 0;
+		const currentBalance = window.storage.getWalletBalance() || 0;
+		if (isCredit) {
+			window.storage.setWalletBalance(currentBalance - amt);
+		} else {
+			window.storage.setWalletBalance(currentBalance + amt);
 		}
 		window.storage.deleteExpense(id);
 		refreshUI();
@@ -102,6 +109,15 @@ function initWalletControls() {
 			alert('Enter an amount greater than 0 to add to wallet.');
 			return;
 		}
+		const credit = {
+			id: Date.now(),
+			amount: Number(v),
+			category: 'Income',
+			type: 'credit',
+			note: 'Funds added to wallet',
+			date: toYMD()
+		};
+		window.storage.saveExpense(credit);
 		window.storage.addWalletFunds(Number(v));
 		addInput.value = '';
 		refreshUI();

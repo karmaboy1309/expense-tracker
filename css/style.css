@@ -1,0 +1,73 @@
+:root{
+	--bg:#f6f7fb;
+	--card:#ffffff;
+	--muted:#6b7280;
+	--accent:#2563eb;
+	--danger:#ef4444;
+	--radius:10px;
+	--max-width:760px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+	margin:0;
+	font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+	background:var(--bg);
+	color:#111827;
+	-webkit-font-smoothing:antialiased;
+}
+
+.container{
+	max-width:var(--max-width);
+	margin:20px auto;
+	padding:16px;
+}
+
+.site-header{background:linear-gradient(90deg,#fff 0,#f8fafc);padding:20px 0;text-align:center}
+.site-header h1{margin:0;font-size:1.25rem}
+.lead{color:var(--muted);margin:6px 0 0}
+
+.panel{background:var(--card);border-radius:var(--radius);padding:14px;margin-bottom:12px;box-shadow:0 1px 2px rgba(16,24,40,0.04)}
+
+form .row{display:flex;flex-direction:column;margin-bottom:12px}
+label{font-size:0.85rem;color:var(--muted);margin-bottom:6px}
+input[type="number"],input[type="date"],input[type="text"],select{padding:10px;border:1px solid #e6e9ef;border-radius:8px;font-size:1rem}
+
+.actions{text-align:right}
+.btn{background:var(--accent);color:white;border:none;padding:10px 14px;border-radius:8px;cursor:pointer}
+.btn:active{transform:translateY(1px)}
+
+.summary-grid{display:flex;gap:12px;justify-content:space-between}
+.summary-item{flex:1;text-align:center;padding:8px}
+.summary-value{font-weight:700;font-size:1.1rem}
+.summary-label{color:var(--muted);font-size:0.85rem}
+
+.wallet-panel{display:flex;align-items:center;justify-content:space-between;padding:8px;border-radius:8px;background:#fafafa;margin-bottom:12px}
+.wallet-left{display:flex;flex-direction:column}
+.wallet-add{display:flex;gap:8px;align-items:center}
+.wallet-add input{padding:8px;border:1px solid #e6e9ef;border-radius:8px}
+
+.expenses-list{list-style:none;padding:0;margin:0}
+.expense-item{display:flex;align-items:flex-start;justify-content:space-between;padding:10px;border-bottom:1px dashed #eef2ff}
+.expense-left{display:flex;gap:12px;align-items:center}
+.category-badge{background:#eef2ff;color:var(--accent);padding:6px 8px;border-radius:8px;font-size:0.85rem}
+.amount{font-weight:700}
+.meta{color:var(--muted);font-size:0.9rem}
+.note{color:#374151;font-size:0.95rem}
+.delete-btn{background:transparent;border:1px solid #fde2e2;color:var(--danger);padding:6px 8px;border-radius:8px;cursor:pointer}
+
+.empty-note{text-align:center;color:var(--muted);padding:12px}
+
+/* Responsive */
+@media (max-width:520px){
+	.summary-grid{flex-direction:column}
+	.actions{text-align:left}
+	.expense-item{flex-direction:column;align-items:stretch}
+	.expense-left{width:100%;justify-content:space-between}
+	.wallet-panel{flex-direction:column;align-items:stretch}
+	.wallet-add{justify-content:space-between}
+}
+
+/* small helpers */
+.muted{color:var(--muted)}
